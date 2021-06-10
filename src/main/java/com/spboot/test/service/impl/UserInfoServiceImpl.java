@@ -145,7 +145,8 @@ public class UserInfoServiceImpl implements UserInfoService {
 			user.setUserProfile(userProfile);
 			user.setProfilePath(profilePath);
 			File f = new File(ROOT + profilePath);
-
+			System.out.println(f);
+			System.out.println(ROOT);
 			try {
 				mf.transferTo(f);
 			} catch (IllegalStateException e1) {
